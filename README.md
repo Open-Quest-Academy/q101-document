@@ -41,7 +41,7 @@ Open Quest Academy (Open-Q) is a future-oriented, AI-driven education platform t
 - **Interactive Technology**: Modern solutions for simplified teaching and learning
 
 ### Platform Capabilities
-- Supports over 1 million learning and training spaces globally
+- Supports learning and training spaces globally
 - Offers educational resources across diverse subjects and difficulty levels
 - Utilizes cutting-edge AI for enhanced learning experiences
 - Provides tools for both learners and educators
@@ -61,7 +61,7 @@ The Q101 Foundation serves as the key enabler and governance participant in the 
 ### Strategic Partnerships
 
 #### Mynd.ai Partnership
-The Q101 Foundation has partnered with Mynd.ai, a leading educational technology provider, to accelerate growth and adoption:
+The Q101 Foundation has partnered with Mynd.ai, an educational technology provider, to accelerate growth and adoption:
 
 - **Exclusive Operating Partner**: Mynd.ai serves as the exclusive operating partner for Open Quest Academy in North America
 - **User Growth**: Spearheading expansion across the North American region
