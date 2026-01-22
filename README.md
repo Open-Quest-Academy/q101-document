@@ -149,10 +149,11 @@ The Q101 Foundation and Open Quest Academy envision a future where:
 
 ## Links and Resources
 
-- **Official Website**: [q101.org](https://q101.org)
-- **Open Quest Academy**: Platform for decentralized education
-- **Q101 Foundation**: Governance and ecosystem support
-- **Mynd.ai Partnership**: North American operations and growth
+For more information about the Q101 ecosystem:
+- Visit the official website: [q101.org](https://q101.org)
+- Explore Open Quest Academy educational platform
+- Learn about Q101 Foundation governance and initiatives
+- Discover partnership opportunities with Mynd.ai and others
 
 ## Contact and Support
 
