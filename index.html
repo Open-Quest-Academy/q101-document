@@ -29,16 +29,13 @@
     window.$docsify = {
       name: 'Q101 Claim Guide',
       repo: 'Open-Quest-Academy/q101-document',
-      loadSidebar: true,
-      subMaxLevel: 4,
+      loadSidebar: false,  // Disable custom sidebar to show auto-generated TOC
+      subMaxLevel: 4,      // Show headings up to h4 in sidebar
       auto2top: true,
       homepage: 'docs/manual/CLAIM_GUIDE.md',
 
-      // Table of Contents in sidebar
+      // Table of Contents in sidebar - auto-generated from current page
       maxLevel: 4,
-      alias: {
-        '/.*/_sidebar.md': '/_sidebar.md',
-      },
 
       // Search
       search: {
