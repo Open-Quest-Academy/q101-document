@@ -30,9 +30,15 @@
       name: 'Q101 Claim Guide',
       repo: 'Open-Quest-Academy/q101-document',
       loadSidebar: true,
-      subMaxLevel: 3,
+      subMaxLevel: 4,
       auto2top: true,
       homepage: 'docs/manual/CLAIM_GUIDE.md',
+
+      // Table of Contents in sidebar
+      maxLevel: 4,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+      },
 
       // Search
       search: {
