@@ -15,7 +15,7 @@ python -m http.server 3000
 ### 方法 2: Docsify CLI
 ```bash
 npm i docsify-cli -g
-docsify serve .
+docsify serve . -p 3000
 ```
 
 ## 🌐 在线访问
