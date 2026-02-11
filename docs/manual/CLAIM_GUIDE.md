@@ -2,31 +2,56 @@
 
 ## Airdrop Release Schedule Overview
 
-The airdrop distribution is divided into two phases: **Lock Period** and **Linear Release Period**.
+The Q101 Airdrop uses a phased release mechanism consisting of three main stages:
 
-### Phase 1: Lock Period (6 Months)
+## 📋 Stage 1: Registration & Activation
 
-| **Detail** | **Information** |
-| --- | --- |
-| Duration | 6 months |
-| Start Date | December 23, 2025 |
-| End Date | Approximately June 21, 2026 |
-| Initial Release (16.67%) | Immediately after lock period ends |
+### What is this?
 
-### Phase 2: Linear Release Period (30 Months)
+When claiming your airdrop for the first time, you must complete on-chain registration and activate your allocation. This process uses a **Commit-Reveal** two-phase security mechanism (a cryptographic method that prevents malicious actors from front-running your transaction).
 
-| **Detail** | **Information** |
-| --- | --- |
-| Duration | 30 months |
-| Start Date | June 21, 2026 |
-| End Date | Approximately December 7, 2028 |
-| Remaining Releases (83.33%) | Distributed over 30 months |
+### Important Notes
+
+- ⚠️ **Permanent Wallet Binding**: The wallet address you use during registration will be permanently linked to your allocation. All future token claims must be made from this same address. **This cannot be changed.**
+- ✅ **Zero Gas Fees**: All transaction fees throughout the process are covered by Q101 (powered by Gelato Relay).
 
 
-**Release Details:**
-- Tokens accumulate continuously (**every 24 hours**)
-- You may claim your accumulated tokens **once every 30 days or longer** (measured from your previous claim)
-- **Unclaimed tokens do not expire** - they accumulate in the contract until you claim them
+## 🔒 Stage 2: Token Lock Period (Cliff Period)
+
+*Note: This stage may or may not apply depending on your specific airdrop configuration. Check the Timeline Overview on the page for details.*
+
+![time overview](docs/images/timeline-overview.png)
+
+### What is this?
+
+After activation, your tokens enter a waiting period during which they remain locked in the smart contract. No tokens are released during this stage unless an initial unlock amount is configured for your allocation.
+
+### Key Information
+
+| Item | Details |
+|------|---------|
+| Lock Duration | Check Timeline Overview (e.g., 180 days / ~6 months) |
+| End Time | Displayed in UTC (e.g., 2026-08-10) |
+| Initial Unlock Amount | One-time token release when the cliff period ends (shown in Timeline Overview card) |
+
+### Tips
+
+- The page displays a countdown showing remaining days, hours, and minutes.
+- The system automatically advances to the next stage when the countdown reaches zero.
+
+
+## 📈 Stage 3: Gradual Release
+
+*Note: This stage may or may not apply depending on your specific airdrop configuration. Check the Timeline Overview on the page for details.*
+
+### What is this?
+
+During this stage, any remaining tokens are unlocked gradually over time through a linear vesting schedule.
+
+### Important Rules
+
+- ⏳ **Claim Cooldown Period**: You must wait a specified period between each claim. Refer to the "Next Claim IN" countdown displayed on the page for exact timing.
+- ✅ **Tokens Never Expire**: Unclaimed tokens continue to accumulate and can be claimed at any time—you will never lose them.
 
 
 ## Prerequisites: Install a Web3 Wallet
@@ -46,18 +71,18 @@ The platform currently supports three wallet connection options:
 > - Your private key and seed phrase (recovery phrase) are the **only** ways to access your wallet. If lost or compromised:
 >     - ❌ You will **not** be able to claim remaining airdrop allocations
 >     - ❌ You will **not** be able to recover tokens already claimed to that wallet
->     - ❌ There is **no** recovery option - not even the project team can help
+>     - ❌ There is **no** recovery option — not even the project team can help
 
 ## How to Register & Activate
 
 ### Step 1: Connect Your Wallet
 
-- Go to the official airdrop claim page (**https://claim.q101.org/**). Click the **"Connect Wallet"** button on the page.
+- Go to the official airdrop claim page. Click the **"Connect Wallet"** button on the page.
 
 ![home](docs/images/home.png)
 
 
-- **Accept The Platform's Agreements**
+- **Accept the Platform's Agreements**
 
 After clicking the "Connect Wallet" button, you will be prompted to accept the platform's agreements. Check **both** required checkboxes to confirm your acceptance, and click **"I Agree"** to proceed to the next step.
 ![platform agreements](docs/images/platform-agreements.png)
@@ -67,7 +92,7 @@ After clicking the "Connect Wallet" button, you will be prompted to accept the p
 
 #### Connect via MetaMask
 
-In the wallet selection window, click **MetaMask**. Your browser will display a MetaMask popup window requesting connection, click **Connect** to authorize the connection.
+In the wallet selection window, click **MetaMask**. Your browser will display a MetaMask popup window requesting connection. Click **Connect** to authorize the connection.
 
 ![metamask connect](docs/images/metamask-connect.png)
 
@@ -77,7 +102,7 @@ In the wallet selection window, click **MetaMask**. Your browser will display a 
 
 #### Connect via Coinbase
 
-In the wallet selection window, click **Coinbase Wallet**. Your browser will display a Coinbase Wallet popup window requesting connection, click **Connect** to authorize the connection.
+In the wallet selection window, click **Coinbase Wallet**. Your browser will display a Coinbase Wallet popup window requesting connection. Click **Connect** to authorize the connection.
 
 ![coinbase connect](docs/images/coinbase-connect.png)
 > **Note**: When registering for an airdrop or claiming tokens, Coinbase Wallet will display a signature request popup for your authorization.
@@ -94,7 +119,7 @@ Before proceeding, verify your mobile wallet supports WalletConnect:
 
 ![wallet connect QR](docs/images/wallet-connect-qr.png)
 
-Using the TokenPocket mobile wallet app as an example, open the **TokenPocket** app on your mobile device. Scan the WalletConnect QR code displayed on your computer screen. Tap **Connect** to authorize the connection.
+Using the **TokenPocket** mobile wallet app as an example, open the TokenPocket app on your mobile device. Scan the WalletConnect QR code displayed on your computer screen. Tap **Connect** to authorize the connection.
 
 ![TokenPocket connect](docs/images/token-pocket-connect.png)
 > **Note**: When registering for an airdrop or claiming tokens, the TokenPocket app on your mobile device will display a signature request popup for your authorization.
@@ -131,11 +156,11 @@ After entering the airdrop claim page, you will need to provide your Voucher Cod
 
 #### Step 2.2: Registration
 
-Before completing registration, review your allocation details and read the **Important Notes**. Check the checkbox to acknowledge you have read the notes, then click **"Sign Registration"** to submit.
+Before completing registration, review your allocation details and read the **Important Notes**. Check the checkbox to acknowledge you have read the notes, and then click **"Sign Registration"** to submit.
 
 ![registration](docs/images/registration.png)
 
-A MetaMask popup window will appear displaying the transaction details, review the transaction information, click **"Confirm"** to approve and submit the transaction.
+A MetaMask popup will appear requesting transaction confirmation. Review the transaction information and click **"Confirm"** to approve and submit the transaction.
 
 ![registration transaction confirm](docs/images/registration-transaction-confirm.png)
 
@@ -145,10 +170,15 @@ After completing registration, you need to activate your token allocation. Click
 
 ![activation](docs/images/activation.png)
 
-A MetaMask popup will appear requesting transaction confirmation, review the transaction information, click **"Confirm"** to approve and submit the transaction.
+A MetaMask popup will appear requesting transaction confirmation. Review the transaction information and click **"Confirm"** to approve and submit the transaction.
 
 ![activation transaction confirm](docs/images/activation-transaction-confirm.png)
 
-After successfully completing both Registration and Activation, your tokens will enter a **Locked Period**. A countdown timer will display the **next unlock time**.
+After successfully completing both Registration and Activation, one of two scenarios will occur:
+- **With Token Lock Period/Gradual Release**: Your tokens will enter a **Token Lock Period** or Gradual Release schedule. A countdown timer will display the **next unlock time**.
 
 ![locked period](docs/images/locked-period.png)
+
+- **Without Token Lock Period/Gradual Release**: The claiming process is complete, and your tokens are immediately available.
+
+![allocation fully redeemed](docs/images/allocation-fully-redeemed.png)
